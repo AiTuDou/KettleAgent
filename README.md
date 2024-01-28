@@ -3,7 +3,9 @@
 ### Introduction
 A very simple python project to demonstrate a very simple software agent, powered by an LLM.
 
-This attempts to connect to a simulator on localhost port `50102`
+This attempts to connect to a simulator on localhost port `50102`.
+
+Simulator code here: [Kettle Simulator](https://github.com/AiTuDou/KettleSimulator.git).
 
 _Note:_ This code is an attempt to demonstrate the concept of a simple agent and be simple to understand, it's not supposed to be production quality code.
 
@@ -13,6 +15,9 @@ _Note:_ This code is an attempt to demonstrate the concept of a simple agent and
 Add your OpenAI API Key as an environment variable OPENAI_API_KEY
 
 ### Running 
+If you don't want to run against OpenAI API, then uncomment the `KeyboardInputCommandSource` instead.
+That class takes in input from the keyboard and sends it off to the CommandExecutors. So a little bit cheaper to experiment.
+
 Run the Kettle Simulator Godot project, which will start a websocket server on port `50102`.
 
 Now run the `_main.py` main entry file.
