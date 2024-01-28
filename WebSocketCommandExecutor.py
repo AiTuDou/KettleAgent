@@ -1,0 +1,16 @@
+import websocket
+
+
+class WebSocketCommandExecutor:
+    def __init__(self):
+        self.ws = websocket.WebSocket()
+        self.ws.connect("ws://127.0.0.1:50102")
+
+    def execute(self, command: str):
+        print("WebSocket executor, calling kettle:", command)
+
+        self.ws.send(command)
+        executionResult = self.ws.recv()
+        print("WebSocket executor, response:", executionResult)
+
+        return executionResult
