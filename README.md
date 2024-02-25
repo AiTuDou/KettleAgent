@@ -5,7 +5,7 @@ A very simple python project to demonstrate a very simple software agent, powere
 
 This attempts to connect to a simulator on localhost port `50102`.
 
-Simulator code here: [Kettle Simulator](https://github.com/AiTuDou/KettleSimulator.git).
+Simulator code here: [Kettle Simulator](https://github.com/iputabraininit/KettleSimulator.git).
 
 _Note:_ This code is an attempt to demonstrate the concept of a simple agent and be simple to understand, it's not supposed to be production quality code.
 
